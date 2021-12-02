@@ -198,3 +198,9 @@
     font-display: swap;
 }
 
+#category-list a{
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
