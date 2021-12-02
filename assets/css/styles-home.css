@@ -1,0 +1,105 @@
+.lateral-directorio {
+    height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);
+}
+
+.header{
+    display: flex;
+    height: 4rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.header-elements a{
+    margin-right: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #58C3F0;
+    letter-spacing: -0.006em;
+}
+
+.header-elements a:first-child{
+    margin-left: 2rem;
+}
+
+#btn-ingresar{
+    padding: 6px;
+    margin-right: 1rem;
+    background-color: #58C3F0;
+    color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-style: none;
+}
+
+#category-list{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.element-category, .element-legales{
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    letter-spacing: -0.006em;
+}
+
+.element-category, .element-legales:hover{
+    cursor: pointer;
+}
+
+
+
+#title-category{
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -0.006em;
+    color: #FFFFFF;
+}
+
+#legales-aside{
+    margin-top: 3rem;
+}
+
+.container-article{
+    padding: 2rem;
+    background-color: #E5E5E5;
+}
+
+.container-article h2{
+    color: #367AA9;
+    font-size: 32px;
+    font-weight: 600; 
+}
+
+.grid-aseguradoras{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 1rem;
+    height: 35rem;
+    overflow-y: scroll;
+
+}
+
+
+.card-aseguradora {
+    display: flex;
+    flex-direction: column;
+    width: 269px;
+    height: 269px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+}
+
+.card-aseguradora p {
+    margin-top: 1.5rem;
+}
