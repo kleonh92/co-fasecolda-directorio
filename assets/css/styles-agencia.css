@@ -67,40 +67,54 @@
     margin-top: 3rem;
 }
 
-.container-article{
+.container-agencia{
+    display: flex;
     padding: 2rem;
     background-color: #E5E5E5;
 }
 
-.container-article h2{
-    color: #367AA9;
-    font-size: 32px;
-    font-weight: 600; 
+.info-agencia { 
+    width: 60%;
 }
 
-.grid-aseguradoras{
-    display: grid;
-    grid-template-columns: repeat(5 , 1fr);
-    gap: 1rem;
-    height: 35rem;
-    overflow-y: scroll;
-
-}
-
-
-.card-aseguradora {
-    display: flex;
-    flex-direction: column;
-    width: 269px;
-    height: 269px;
-    justify-content: center;
-    align-items: center;
+.card-info-agencia{
+    width: 40%;
     background-color: #FFFFFF;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
 
 }
 
-.card-aseguradora p {
-    margin-top: 1.5rem;
+.grid-ejecutivos { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ECEFF3;
+}
+
+.agencia-cabecera{
+   display: flex;
+   margin-left: 1rem;
+   align-items: center;
+}
+
+.agencia-cabecera img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.redes-sociales {
+    margin-right: 1rem;
+}
+
+.redes-sociales a {
+    margin-right: 0.5rem;
+}
