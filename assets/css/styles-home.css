@@ -47,6 +47,7 @@
     color: #FFFFFF;
     margin-bottom: 1rem;
     letter-spacing: -0.006em;
+    text-decoration: none;
 }
 
 .element-category, .element-legales:hover{
@@ -60,6 +61,10 @@
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: -0.006em;
+    color: #FFFFFF;
+}
+
+#categories a{
     color: #FFFFFF;
 }
 
