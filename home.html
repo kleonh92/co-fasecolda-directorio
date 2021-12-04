@@ -12,16 +12,25 @@
     <title>Home | Fasecolda</title>
 </head>
 <body>
-    <div class="container-grid">    
+    <div class="container-grid">
+        <!--Este es el aside lateral del home-->    
         <aside class="lateral-directorio">
-            <div id="logo">
-                <img src="assets/img/logo-aside-fasecolda.png" alt="Logo-fasecolda">
+            <div class="logo-aside-cabecera">
+                <div id="logo">
+                    <img src="assets/img/logo-aside-fasecolda.png" alt="Logo-fasecolda">
+                </div>
+                <div class="flecha-logo">
+                    <img src="assets/img/flecha.png" alt="">
+                    <img src="assets/img/flecha.png" alt="">
+                </div>
+
             </div>
+
 
             <h3 id="title-category">Categorias</h3>
 
             <div id="categories">
-                <div id="category-list" class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">  
+                <div id="category-list" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">  
                     <a  class="nav-link active" 
                         id="v-pills-fed-seguros-colombianos-tab"
                         data-bs-toggle="pill" href="#v-pills-fed-seguros-colombianos"
@@ -109,6 +118,7 @@
 
         </aside>
 
+         <!--Este es el header recortado del home lateral del home-->    
         <header class="header">
             <nav class="header-elements">
                 <a href="#">Categorias</a>
@@ -120,8 +130,9 @@
             </div>
         </header>
 
+         <!--Este es el contenedor que funciona con las opciones laterales del home-->    
         <div class="container-article tab-content" id="v-pills-tabContent">
-            
+             <!-- Estas son las secciones que muestran los elementos de cada aside lateral -->    
             <div    class="tab-pane fade show active"
                     id="v-pills-fed-seguros-colombianos" 
                     role="tabpanel" 
@@ -135,7 +146,7 @@
                     id="v-pills-agencia-seguros" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-agencia-seguros-tab">
-                    <h2>Agencias de seguros</h2>       
+                    <h2 class="titulo-section">Agencias de seguros</h2>       
             
             </div>
             
@@ -143,7 +154,7 @@
                     id="v-pills-ajustadores-seguros" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-ajustadores-seguros-tab">
-                    <h2>Ajustadores de seguros</h2>       
+                    <h2 class="titulo-section">Ajustadores de seguros</h2>       
             
             </div>
             
@@ -151,7 +162,7 @@
                     id="v-pills-asesores-seguros" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-asesores-seguros-tab">
-                    <h2>Asesores de seguros</h2>       
+                    <h2 class="titulo-section">Asesores de seguros</h2>       
             
             </div>
             
@@ -159,7 +170,7 @@
                     id="v-pills-asociaciones-seguros" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-asociaciones-seguros-tab">
-                    <h2>Asociaciones de seguros</h2>       
+                    <h2 class="titulo-section">Asociaciones de seguros</h2>       
             
             </div>
             
@@ -167,7 +178,7 @@
                     id="v-pills-compania-reaseguros" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-compania-reaseguros-tab">
-                    <h2>Compañías de reaseguros del exterior</h2>       
+                    <h2 class="titulo-section">Compañías de reaseguros del exterior</h2>       
             
             </div>
             
@@ -176,8 +187,8 @@
                     role="tabpanel"
                     aria-labelledby="v-pills-compania-seguros-tab">
                     
-                    <h2>Compañías de seguros</h2>
-                    <p>Una compañía de seguros o aseguradora es la empresa especializada en el seguro, cuya actividad económica consiste en producir el servicio de seguridad, cubriendo determinados riesgos económicos (riesgos asegurables) a las unidades económicas de producción y consumo.  En Colombia su operación esta regulada y supervisada por la Superintendencia Financiera</p>
+                    <h2 class="titulo-section">Compañías de seguros</h2>
+                    <p class="parrafo-section">Una compañía de seguros o aseguradora es la empresa especializada en el seguro, cuya actividad económica consiste en producir el servicio de seguridad, cubriendo determinados riesgos económicos (riesgos asegurables) a las unidades económicas de producción y consumo.  En Colombia su operación esta regulada y supervisada por la Superintendencia Financiera</p>
                     
                     <div class="grid-aseguradoras">
                         <div class="card-aseguradora">
@@ -239,7 +250,7 @@
                     id="v-pills-consultores-sector" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-consultores-sector-tab">
-            <h2>Consultores del sector</h2>       
+                    <h2 class="titulo-section">Consultores del sector</h2>       
     
             </div>
             
@@ -247,7 +258,7 @@
                     id="v-pills-entidades-no-aseguradoras" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-entedidades-no-aseguradoras-tab">
-            <h2>Entidades no aseguradoras</h2>       
+                    <h2 class="titulo-section">Entidades no aseguradoras</h2>       
     
             </div>
             
@@ -255,7 +266,7 @@
                     id="v-pills-proveedores-sector" 
                     role="tabpanel" 
                     aria-labelledby="v-pills-proveedores-sector-tab">
-            <h2>Proveedores del sector</h2>       
+                    <h2 class="titulo-section">Proveedores del sector</h2>       
     
             </div>
 

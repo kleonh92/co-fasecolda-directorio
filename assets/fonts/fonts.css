@@ -198,9 +198,57 @@
     font-display: swap;
 }
 
+#title-category{
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.006em;
+    line-height: 22px;
+
+}
+
 #category-list a{
     font-family: 'Asap';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
 }
+
+.element-legales{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 17px;
+}
+
+#header-elements a {
+    font-family: 'Asap';
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px;
+}
+ .titulo-section{
+     font-family: 'Asap';
+     font-size: 32px;
+     font-weight: 600;
+     line-height: 40px;
+ }
+
+ .parrafo-section{
+     font-family: 'Roboto';
+     font-size: 14px;
+     font-weight: 400;
+     font-style: normal;
+     line-height: 20px;
+ }
+
+ #btn-ingresar{
+     font-family: 'Roboto';
+     font-size: 14px;
+     font-weight: 700;
+     font-style: normal;
+     line-height: 20px;
+ }

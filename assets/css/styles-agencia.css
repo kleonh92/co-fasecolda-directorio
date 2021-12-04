@@ -47,6 +47,8 @@
     color: #FFFFFF;
     margin-bottom: 1rem;
     letter-spacing: -0.006em;
+    text-decoration: none;
+
 }
 
 .element-category, .element-legales:hover{
@@ -92,7 +94,6 @@
 .cabecera{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -102,7 +103,6 @@
 .agencia-cabecera{
    display: flex;
    margin-left: 1rem;
-   align-items: center;
 }
 
 .agencia-cabecera img {
@@ -118,3 +118,56 @@
 .redes-sociales a {
     margin-right: 0.5rem;
 }
+
+.agencia-cuerpo{ 
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.direccion-agencia{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.ubication-description{
+    width: 40%;
+}
+
+.direccion-agencia img {
+    margin-right: 0.5rem;
+}
+
+.info-nit{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-nit img {
+    margin-top: 0.2rem;
+}
+
+.info-nit, .horario-atencion-agencia, .lineas-atencion{
+    margin-top: 1rem;
+}
+
+.nit-primario, .nit-secundario{
+    width: 40%;
+}
+
+.cabecera-horario, .cabecera-lineas-atencion{
+    display: flex;
+}
+.cabecera-horario img, .cabecera-lineas-atencion img {
+    margin-right: 0.5rem;
+}
+
+.info-atencion{
+    display: flex;
+}
+
+.dias-atencion, .horarios-atencion{
+    width: 40%;
+}
+
