@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/styles-agencia.css">
+    <!-- <link rel="stylesheet" href="assets/css/styles-agencia.css"> -->
+    <link rel="stylesheet" href="assets/css/styles-home.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
     <link rel="stylesheet" href="assets/css/agencia-areas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Agencia | Fasecolda</title>
@@ -13,24 +15,97 @@
 <body>
     <div class="container-grid">    
         <aside class="lateral-directorio">
-            <div id="logo">
-                <img src="assets/img/logo-aside-fasecolda.png" alt="Logo-fasecolda">
+            <div class="logo-aside-cabecera">
+                <div id="logo">
+                    <img src="assets/img/logo-aside-fasecolda.png" alt="Logo-fasecolda">
+                </div>
+                <div class="flecha-logo">
+                    <img src="assets/img/flecha.png" alt="">
+                    <img src="assets/img/flecha.png" alt="">
+                </div>
+
             </div>
 
             <h3 id="title-category">Categorias</h3>
 
             <div id="categories">
-                <div id="category-list">
-                    <a class="element-category">Federación de aseguradores colombianos – Fasecolda</a>
-                    <a class="element-category">Agencias de seguros</a>
-                    <a class="element-category">Ajustadores de seguros</a>
-                    <a class="element-category">Asesores de seguros</a>
-                    <a class="element-category">Asociaciones de seguros</a>
-                    <a class="element-category">Compañías de reaseguros del exterior</a>
-                    <a class="element-category">Compañías de seguros</a>
-                    <a class="element-category">Consultores del sector</a>
-                    <a class="element-category">Entidades no aseguradoras</a>
-                    <a class="element-category">Proveedores del sector</a>
+                <div id="category-list" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">  
+                    <a  class="nav-link active" 
+                        id="v-pills-fed-seguros-colombianos-tab"
+                        data-bs-toggle="pill" href="#v-pills-fed-seguros-colombianos"
+                        role="tab" aria-controls="v-pills-fed-seguros-colombianos" 
+                        aria-selected="true">Federación de aseguradores colombianos – Fasecolda</a>
+                    
+                    <a  class="nav-link" 
+                        id="v-pills-agencia-seguros-tab"
+                        data-bs-toggle="pill" href="#v-pills-agencia-seguros"
+                        role="tab" aria-controls="v-pills-agencia-seguros" 
+                        aria-selected="false">Agencias de seguros</a>
+                    
+                    <a  class="nav-link"
+                        id="v-pills-ajustadores-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-ajustadores-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-ajustadores-seguros" 
+                        aria-selected="false">Ajustadores de seguros</a>
+
+                    <a  class="nav-link"
+                        id="v-pills-asesores-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-asesores-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-asesores-seguros" 
+                        aria-selected="false">Asesores de seguros</a>
+
+                    <a  class="nav-link"
+                        id="v-pills-asociaciones-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-asociaciones-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-asociaciones-seguros" 
+                        aria-selected="false">Asociaciones de seguros</a>
+
+                    <a  class="nav-link"
+                        id="v-pills-compania-reaseguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-compania-reaseguros" 
+                        role="tab" 
+                        aria-controls="v-pills-compania-reaseguros" 
+                        aria-selected="false">Compañías de reaseguros del exterior</a>
+
+                    <a  class="nav-link"
+                        id="v-pills-compania-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-compania-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-compania-seguros" 
+                        aria-selected="false">Compañías de seguros</a>
+                    
+                    <a  class="nav-link"
+                        id="v-pills-consultores-sector-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-consultores-sector" 
+                        role="tab" 
+                        aria-controls="v-pills-consultores-sector" 
+                        aria-selected="false">Consultores del sector</a>
+                    
+                    <a  class="nav-link"
+                        id="v-pills-entidades-no-aseguradoras-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-entidades-no-aseguradoras" 
+                        role="tab" 
+                        aria-controls="v-pills-entidades-no-aseguradoras" 
+                        aria-selected="false">Entidades no aseguradoras</a>
+                    
+                    <a  class="nav-link"
+                        id="v-pills-proveedores-sector-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-proveedores-sector" 
+                        role="tab" 
+                        aria-controls="v-pills-proveedores-sector" 
+                        aria-selected="false">Proveedores del sector</a>
+                
                 </div>
             </div>
 
@@ -55,40 +130,130 @@
 
         <section class="container-agencia">
            <div class="info-agencia">
-                <img class="logo-agencia" src="assets/img/Logo Allianz.png" alt="">
-                <h3>Nosotros</h3>
-                <p>RAMOS AUTORIZADOS</p>
-                <p>VIDA: Accidentes Personales, Vida Grupo, y Vida Individual, Salud, Pensiones Voluntarias.
+                <img class="logo-agencia" src="assets/img/Logo-Allianz.svg" alt="">
+                <h3 class="titulo-agencia">Nosotros</h3>
+                <p class="ramos-autorizados-agencia">RAMOS AUTORIZADOS</p>
+                <p class="descripcion-agencia">VIDA: Accidentes Personales, Vida Grupo, y Vida Individual, Salud, Pensiones Voluntarias. <br><br>
                     GENERALES: Agropecuario, Corriente Débil, Incendio, Lucro Cesante, Manejo, Montaje y Rotura de Maquinaria, Navegación y Casco, Responsabilidad Civil, Sustracción, Terremoto, Transporte, Hogar, Todo Riesgo Contratista.
                 </p>
 
-                <h3>Ejecutivos</h3>
+                <h3 class="titulo-ejecutivo">Ejecutivos</h3>
                 <div class="grid-ejecutivos">
                     <div class="card-ejecutivo">
-                        <p class="cargo-ejecutivo">CEO</p>
-                        <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
-                        <p class="email-ejecutivo">Email: <b>david.colmenares@allianz.co</b></p>
-                        <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
                     </div>
                     <div class="card-ejecutivo">
-                        <p class="cargo-ejecutivo">CEO</p>
-                        <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
-                        <p class="email-ejecutivo">Email: <b>david.colmenares@allianz.co</b></p>
-                        <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
                     </div>
                     <div class="card-ejecutivo">
-                        <p class="cargo-ejecutivo">CEO</p>
-                        <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
-                        <p class="email-ejecutivo">Email: <b>david.colmenares@allianz.co</b></p>
-                        <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
                     </div>
                     <div class="card-ejecutivo">
-                        <p class="cargo-ejecutivo">CEO</p>
-                        <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
-                        <p class="email-ejecutivo">Email: <b>david.colmenares@allianz.co</b></p>
-                        <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
                     </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+                    <div class="card-ejecutivo">
+                        <div class="info-ejecutivo">
+                            <p class="cargo-ejecutivo">CEO</p>
+                            <p class="nombre-ejecutivo">DAVID COLMENARES SPENCE</p>
+                            <p class="email-ejecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                            <p class="telefono-ejecutivo">Teléfono: 5188787 Ext:9010</p>
+                        </div>       
+                    </div>
+
                 </div>
+
 
            </div>
 
@@ -135,20 +300,20 @@
                     <div class="horario-atención-agencia">
                         <div class="cabecera-horario">
                             <img src="assets/img/calendar-info.svg" alt="">
-                            <h3>Horario de atención</h3>
+                            <h3 class="titulo-info-seccion">Horario de atención</h3>
                         </div>
                         
                         <div class="info-atencion">
                             
                             <div class="dias-atencion">
-                                Lunes a viernes: 
-                                Sábados:
+                                Lunes a viernes:<br> 
+                                Sábados:<br>
                                 Domingos y Festivos:
                             </div>
 
                             <div class="horarios-atencion">
-                                08:00 AM - 5:00 PM 
-                                08:00 AM - 1:00 PM
+                                08:00 AM - 5:00 PM<br>
+                                08:00 AM - 1:00 PM<br>
                                 Cerrado
                             </div>    
                         </div>
@@ -158,30 +323,31 @@
                     <div class="lineas-atencion">
                         <div class="cabecera-lineas-atencion">
                             <img src="assets/img/telefono-icon.svg" alt="">
-                            <h3>Línea de atención al cliente</h3>
+                            <h3 class="titulo-info-seccion">Línea de atención al cliente</h3>
                         </div>
 
                         <div class="lineas-atencion-info">
                             <p class="lineas-detalle">
-                                Celular: #265
-                                Bogotá:+571 594133
-                                Nacional: 018000 513500
+                                Celular: #265 <br>
+                                Bogotá:+571 594133 <br>
+                                Nacional: 018000 513500 <br><br>
 
-                                Vida individual Actual: 
-                                Bogotá: +571 48448855 / Nacional: 018000 412111
+                                <b>Vida individual Actual:</b> <br>
+                                Bogotá: +571 48448855 / Nacional: 018000 412111 <br><br>
 
-                                Affinity: 
-                                Bogotá: +571 5941130 / Nacional: 0188000 514400
+                                <b>Affinity:</b> <br>
+                                Bogotá: +571 5941130 / Nacional: 0188000 514400 <br><br>
 
-                                Ahorro e Inversión: 
-                                Bogotá: +571 5941130 / Nacional: 018000 5144400
+                                <b>Ahorro e Inversión:</b> <br>
+                                Bogotá: +571 5941130 / Nacional: 018000 5144400 <br><br>
 
-                                Consumidores financieros en situación de discapacidad (CFSD) auditiva:  Línea Gratuita Nacional: 018000 415232
+                                <b>Consumidores financieros en situación de discapacidad (CFSD) auditiva:</b><br>  
+                                Línea Gratuita Nacional: 018000 415232<br><br>
 
-                                Pagos y cartera: 
-                                Bogotá: +571 6065900 / Nacional: 018000 517270
+                                <b>Pagos y cartera:</b>><br> 
+                                Bogotá: +571 6065900 / Nacional: 018000 517270<br><br>
 
-                                Autorizaciones para Instituciones Médicas: 
+                                <b>Autorizaciones para Instituciones Médicas:</b><br>
                                 Bogotá: +571 5941122 / Nacional : 018000 510989
                             </p>
                         

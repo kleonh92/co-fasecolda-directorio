@@ -70,8 +70,6 @@
     cursor: pointer;
 }
 
-
-
 #title-category{
     margin-top: 3rem;
     margin-left: 1rem;
@@ -109,7 +107,10 @@
     gap: 1rem;
     height: 45rem;
     overflow-y: scroll;
+}
 
+.grid-aseguradoras::-webkit-scrollbar{
+    display: none;
 }
 
 
@@ -129,3 +130,181 @@
     margin-top: 1.5rem;
 }
 
+
+/*Estilos de agencia*/
+
+.container-agencia{
+    display: flex;
+    padding: 2rem;
+    background-color: #E5E5E5;
+}
+
+.info-agencia { 
+    width: 60%;
+}
+
+.card-info-agencia{
+    width: 40%;
+    background-color: #FFFFFF;
+    border-radius: 8px 0 0 8px;
+
+}
+
+.grid-ejecutivos { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    height: 25rem;
+    overflow-y: scroll;
+    margin-right: 0.5rem;
+}
+
+.grid-ejecutivos::-webkit-scrollbar{
+    display: none;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ECEFF3;
+}
+
+.agencia-cabecera{
+   display: flex;
+   margin-left: 1rem;
+}
+
+.agencia-cabecera img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+.redes-sociales {
+    margin-right: 1rem;
+}
+
+.redes-sociales a {
+    margin-right: 0.5rem;
+}
+
+.agencia-cuerpo{ 
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.direccion-agencia{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.ubication-description{
+    width: 40%;
+}
+
+.direccion-agencia img {
+    margin-right: 0.5rem;
+}
+
+.info-nit{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-nit img {
+    margin-top: 0.2rem;
+}
+
+.info-nit, .horario-atencion-agencia, .lineas-atencion{
+    margin-top: 1rem;
+}
+
+.nit-primario, .nit-secundario{
+    width: 40%;
+}
+
+.cabecera-horario, .cabecera-lineas-atencion{
+    display: flex;
+}
+.cabecera-horario img, .cabecera-lineas-atencion img {
+    margin-right: 0.5rem;
+}
+
+.info-atencion{
+    display: flex;
+}
+
+.dias-atencion, .horarios-atencion{
+    width: 40%;
+}
+
+.card-ejecutivo {
+    display: flex;
+}
+
+.card-ejecutivo::before{
+    content: url(/assets/img/ejecutivos-icon-list.svg);
+    margin-right: 0.3rem;
+}
+
+.info-ejecutivo{
+    width: 95%;
+}
+
+.logo-agencia {
+    width: 320px;
+}
+
+.titulo-agencia, .titulo-ejecutivo{
+    color: #58C3F0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ramos-autorizados-agencia{
+    color: #6D7074;
+}
+
+.descripcion-agencia{
+    width: 80%;
+}
+
+
+
+.cargo-ejecutivo, .nombre-ejecutivo, .email-ejecutivo, .telefono-ejecutivo{
+    margin-bottom: 0;
+}
+
+.correo-ejecutivo{
+    color: #58C3F0;
+}
+
+/*Estilos de card info agencia lateral*/
+
+.title-cabecera{
+    color: #367AA9;
+}
+
+.nit-primario-description, .nit-secundario-description, 
+.lineas-detalle {
+    width: 80%;
+}
+
+.titulo-info-seccion{
+    color: #58C3F0;
+}
+
+.lineas-detalle{
+   height: 25rem;
+   overflow-y: scroll;
+}
+
+
+.lineas-detalle::-webkit-scrollbar{
+    display: none;
+}

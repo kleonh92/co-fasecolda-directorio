@@ -237,7 +237,7 @@
      line-height: 40px;
  }
 
- .parrafo-section{
+ .parrafo-section, .descripcion-agencia, .ubication-description, .nit-primario-description, .nit-secundario-description{
      font-family: 'Roboto';
      font-size: 14px;
      font-weight: 400;
@@ -252,3 +252,40 @@
      font-style: normal;
      line-height: 20px;
  }
+
+ /*Fuentes de la sección de agencia*/
+
+ .titulo-agencia, .titulo-ejecutivo, .titulo-info-seccion{
+     font-family: 'Asap';
+     font-size: 20px;
+     font-weight: 600;
+     font-style: normal; 
+ }
+
+ .ramos-autorizados-agencia{
+     font-family: 'Asap';
+     font-size: 16px;
+     font-weight: 600;
+     font-style: normal;
+ }
+
+ .cargo-ejecutivo, .email-ejecutivo, .telefono-ejecutivo, .dias-atencion, .horarios-atencion, .lineas-detalle{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nombre-ejecutivo {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title-cabecera {
+    font-family: 'Asap';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
