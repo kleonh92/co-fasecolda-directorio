@@ -40,7 +40,45 @@ html , body {
     background-color: #FFFFFF;
 }
 
-.header-elements a{
+.header-paquetes{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 72px;
+    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%); 
+}
+
+.header-elements-paquetes{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-paquetes #logo{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.contenido-descripcion{
+    width: 50%;
+    margin-left: 10rem;
+}
+
+.parrafo-paquetes, .lista-beneficios {
+    width: 70%;
+}
+
+.lista-beneficios{
+    padding-left: 1rem;
+}
+
+.lista-beneficios{
+    list-style-image: url(/assets/img/check-vineta.svg) ;
+}
+
+.header-elements a, .header-elements-paquetes a{
     margin-right: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -50,7 +88,7 @@ html , body {
     letter-spacing: -0.006em;
 }
 
-.header-elements a:first-child{
+.header-elements a:first-child, .header-elements-paquetes a:first-child{
     margin-left: 2rem;
 }
 
@@ -334,4 +372,90 @@ html , body {
 
 .lineas-detalle::-webkit-scrollbar{
     display: none;
+}
+
+
+.wrapper { 
+    position: relative;
+    height: 100vh;
+}
+
+.card-paquetes {
+    position: absolute;
+    top: 20%;
+    right: 7rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 16px 0px #00000014;
+    width: 35rem;
+    height: 40rem;
+    border-radius: 8px;
+}
+
+.footer-paquetes{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 2rem;
+    background-color: #F2F2F2;
+    bottom: 0;
+}
+
+.legales-footer a , .derechos a {
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.block-paquetes{
+    position: relative;
+}
+
+.encabezado-paquete {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.paquetes{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #478DCB;
+    width: 90%;
+    height: 2.5rem;
+    margin: 1rem auto;
+    border-radius: 4px;
+}
+
+.paquete-id{
+    width: 10%;
+    height: 100%;
+    background:#58C3F0;
+    border-radius: 8px 0 0 8px;
+}
+
+
+.paquete-eleccion{
+    width: 60%
+}
+
+.paquete-precio{
+    width: 30%;
+}
+
+.metodos-pago{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 12rem;
+    margin: 0 auto;
+}
+
+.tarjeta-credito, .transferencia-bancaria {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-paquetes{
+    color: #58C3F0;
 }

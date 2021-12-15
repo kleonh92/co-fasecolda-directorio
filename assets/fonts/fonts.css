@@ -255,7 +255,7 @@
 
  /*Fuentes de la sección de agencia*/
 
- .titulo-agencia, .titulo-ejecutivo, .titulo-info-seccion{
+ .titulo-agencia, .titulo-ejecutivo, .titulo-info-seccion, .titulos-paquetes{
      font-family: 'Asap';
      font-size: 20px;
      font-weight: 600;
@@ -269,7 +269,7 @@
      font-style: normal;
  }
 
- .cargo-ejecutivo, .email-ejecutivo, .telefono-ejecutivo, .dias-atencion, .horarios-atencion, .lineas-detalle{
+ .cargo-ejecutivo, .email-ejecutivo, .telefono-ejecutivo, .dias-atencion, .horarios-atencion, .lineas-detalle, .parrafo-paquetes, .lista-beneficios{
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 400;
@@ -289,3 +289,4 @@
     font-style: normal;
     font-weight: 700;
 }
+
