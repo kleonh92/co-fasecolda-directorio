@@ -223,7 +223,7 @@
     line-height: 17px;
 }
 
-#header-elements a {
+#header-elements a , .header-elements-paquetes a{
     font-family: 'Asap';
     font-size: 14px;
     font-weight: 600;
@@ -290,3 +290,35 @@
     font-weight: 700;
 }
 
+.title-banner{
+    font-family: 'Asap';
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+.legales-footer a , .derechos a{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 17px;
+}
+
+.id-paquete, .plan-cantidad, .plan-precio{
+    font-family: 'Asap';
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.partial-title{
+    font-family: 'Asap';
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: normal;  
+}
