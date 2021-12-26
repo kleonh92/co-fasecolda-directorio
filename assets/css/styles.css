@@ -444,6 +444,7 @@ html , body {
     background-color: #478DCB;
 }
 
+
 .id-paquete{
     width: 4rem;
     text-align: center;
@@ -489,12 +490,6 @@ html , body {
 
 }
 
-.paquetes > input:checked + label {
-    border-color: #ccc;
-    border-bottom: 1px solid #fff;
-    margin-bottom: -1px;
-}
-
 .label-paquete{
     background-color: #478DCB;
     border-radius: 8px;
@@ -504,6 +499,10 @@ html , body {
     width: 24px;
 }
 
-.radio:checked + .card {
-    background-color: #FFFFFF;
+/* .radio:checked + .plan-cantidad{
+    border: 1px solid red;
+} */
+
+.card > .radio:checked{
+    border: 1px solid red;
 }
