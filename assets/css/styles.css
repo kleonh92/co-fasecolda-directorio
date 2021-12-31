@@ -1,8 +1,5 @@
 /*Definicion de areas para armar la grilla base de la estructura*/
 
-html , body {
-    overflow-y: hidden;
-}
 
 .container-grid {
     display: grid;
@@ -50,6 +47,133 @@ html , body {
     z-index: 9;
     background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%); 
 }
+
+/*inicio de estilos de la nueva pantalla previa al directorio*/
+.header-fasecolda{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);   
+}
+
+.footer-fasecolda{
+    width: 100%;
+    height: 12rem;
+    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);   
+}
+
+.banner-fasecolda img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-categories{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.section-categories > h1, .section-aliados > h1{
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+    color: rgba(73, 75, 77, 1);
+
+}
+
+.grid-list-categories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5rem;
+    width: 80%;
+    margin: 2rem auto;
+    justify-items: center;
+}
+
+.element-list-categories{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #478DCB;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section-paquetes{
+    background-color: #E5F4FE;
+}
+
+.section-paquetes h1{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+    color: rgba(73, 75, 77, 1); 
+}
+
+.section-paquetes p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400; 
+}
+
+.container-info-paquetes{
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 4rem
+}
+
+.article-paquetes{
+    margin-left: 8rem;
+}
+
+.article-paquetes > p {
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.article-paquetes > button{
+    margin-top: 2rem;
+}
+
+.btn-ver-paquetes{
+    width: 8rem;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    background: #478DCB;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.section-aliados{
+    margin: 4rem 0; 
+}
+
+
+.section-aliados > button {
+    display: block;
+    margin: 0 auto;
+    width: 8rem;
+    padding: 0.5rem;
+    color: #FFFFFF;
+    background: #478DCB;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 8%);
+}
+
+.carousel-aliados{
+    display: flex;
+    gap: 6rem;
+    place-content: center;
+    height: 2.5rem;
+    margin: 4rem 0;
+}
+/*Fin de estilos de la nueva pantalla previa al directorio*/
 
 .header-elements-paquetes{
     display: flex;
