@@ -4,20 +4,21 @@
 :root{
     --color-white: #FFFFFF;
     --color-primary: #478DCB;
-    --color-neutral: #494B4D; 
+    --color-neutral: #494B4D;
+    --color-neutral-100: #2C2D2E; 
+    --color-neutral-80: #6D7074;
 }
 
 /* Fin de definicion de variables*/
 
 /*Definicion de areas para armar la grilla base de la estructura*/
 
-.container-grid {
+.contenedorDirectorio {
     display: grid;
-    grid-template-columns: 15vw 85vw;
-    grid-template-rows: 10vh 90vh;
-    grid-auto-flow: row;
+    grid-template-columns: minmax(181px, 17vw) 85vw;
+    grid-auto-flow: column;
     grid-template-areas:
-      "sidebar header"
+      "sidebar article"
       "sidebar article";
   }
   
@@ -25,7 +26,7 @@
   
   .header { grid-area: header; }
   
-  .container-article { grid-area: article; }
+  .contenedorCategoria { grid-area: article; }
 
   .container-agencia { grid-area: article; }
 
@@ -281,6 +282,167 @@
 
 /*Fin de estilos del home del directorio*/
 
+/*Inicio de estilos de la pag de directorio*/
+
+.lateralDirectorio {
+    height: 100vh;
+    padding: 1rem;
+    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);
+}
+
+.lateralDirectorio__titulo{
+    font-family: Asap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: #FFFFFF3D;
+}
+
+
+.lateralDirectorio__categoria{
+    font-family: Asap;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: var(--color-white);
+}
+
+
+.contenedorCategoria{
+    padding: 2rem;
+    background-color: var(--color-white);
+}
+
+.categoriaAseguradora{
+    width: 85%;
+}
+
+.categoriaAseguradora__titulo{
+    font-family: Asap;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.022em;
+    text-align: left;
+    color: var(--color-neutral);
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+
+.categoriaAseguradora__parrafo {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: var(--color-neutral-100);
+    margin-bottom: 2rem;
+    width: 70%;
+}
+
+
+.categoriaAseguradora__grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr); 
+    gap: 1rem;
+    height: 40rem;
+    overflow-y: scroll;
+}
+
+.categoriaAseguradora__grid::-webkit-scrollbar{
+    display: none;
+}
+
+.aseguradoraCard {
+    position: relative;
+    display: flex;
+    width: 306px;
+    height: 186px;
+    background-color: var(--color-white);
+    border-radius: 15px;
+    border: 1px solid #DAE0E8;
+    box-shadow: 0px 8px 16px 0px #00000014;
+}
+
+.aseguradoraCard__contenedorImagen{
+    width: 100%;
+    margin: auto;
+    max-width: 70%;
+    min-width: 160px;
+    text-align: center;
+}
+
+
+.aseguradoraCard__nombre {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-neutral-80);
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+/*Se usa el enfoque desktop first debido a la ausencia de diseños en mobile*/
+
+@media (max-width: 1366px) {
+    .categoriaAseguradora__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .categoriaAseguradora__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .categoriaAseguradora__grid{
+        grid-template-columns: 1fr;
+    }
+} 
+
+
+/*Fin de estilos de la página de directorio*/
+
+
+/*Inicio de estilos del detalle de la agencia*/
+
+
+/*Fin de estilos del detalle de la agencia*/
+
+
 
 
 /*Inicio de estilos de la página de Paquetes*/
@@ -400,11 +562,7 @@
 
 /*Estilos del sitio*/
 
-.lateral-directorio {
-    height: 100vh;
-    padding: 1rem;
-    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);
-}
+
 
 .header{
     display: flex;
@@ -488,64 +646,10 @@
     cursor: pointer;
 }
 
-#title-category{
-    margin-top: 3rem;
-    margin-left: 1rem;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-#categories a{
-    color: #FFFFFF;
-}
 
 #legales-aside{
     margin-top: 3rem;
     margin-left: 1rem;
-}
-
-.container-article{
-    padding: 2rem;
-    background-color: #E5E5E5;
-}
-
-.titulo-section{
-    color: #367AA9;
-    margin-bottom: 2rem; 
-}
-
-.parrafo-section {
-    color: #2C2D2E;
-    margin-bottom: 2rem;
-}
-
-.grid-aseguradoras{
-    display: grid;
-    grid-template-columns: repeat(5 , 1fr);
-    gap: 1rem;
-    height: 45rem;
-    overflow-y: scroll;
-}
-
-.grid-aseguradoras::-webkit-scrollbar{
-    display: none;
-}
-
-
-.card-aseguradora {
-    display: flex;
-    flex-direction: column;
-    width: 269px;
-    height: 269px;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-
-}
-
-.card-aseguradora p {
-    margin-top: 1.5rem;
 }
 
 
