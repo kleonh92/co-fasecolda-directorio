@@ -4,88 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Home Directorio - Fasecolda</title>
 </head>
 <body>
 
-    <header class="header-fasecolda">
-        <div class="logo">
-            <img src="/assets/img/logo-aside-fasecolda.png" alt="">
-        </div>
-        <nav class="menu-header">
-            <ul>
-                <li><a href="#">Fasecolda</a></li>
-                <li><a href="#">Ramos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Sala de prensa</a></li>
-                <li><a href="#">Eventos</a></li>
+    <!-- <header class="headerFasecolda">
+        <nav class="headerFasecolda__nav">
+            <ul class="headerFasecolda__list">
+                <li><a class="headerFasecolda__listElement" href="#">Fasecolda</a></li>
+                <li><a class="headerFasecolda__listElement" href="#">Ramos</a></li>
+                <li><a class="headerFasecolda__listElement" href="#">Servicios</a></li>
+                <li><a class="headerFasecolda__listElement" href="#">Sala de prensa</a></li>
+                <li><a class="headerFasecolda__listElement" href="#">Eventos</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
-    <section class="container-info">
-        <section class="banner-fasecolda">
-            <img src="/assets/img/banner-image-home.png" alt="">
-        </section>
-        <div class="section-categories">
-            <h1>Categorías</h1>
-            <ul class="grid-list-categories">
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                <li><a class="element-list-categories" href="#">Agencia de seguros</a></li>
-                
-            </ul>
-        </div>
-        <div class="section-paquetes">
+    <section class="contenedorPrincipal">
+        <section class="bannerDirectorio">
+            <img class="bannerDirectorio--imagen" src="/assets/img/banner-image-home.png" alt="Banner Home directorio">
             
-           <div class="container-info-paquetes">
-                <div class="article-paquetes">
-                    <h1>Paquetes</h1>
-                    <p>
+            <div class="bannerDirectorio--info">
+                <img class="bannerDirectorio--logoFasecolda" src="/assets/img/logo-fasecolda.png" alt="Fasecolda logo">
+                <h1 class="bannerDirectorio--titulo">Encuentra aquí la aseguradora <br> que necesitas</h1>
+                <p class="bannerDirectorio--parrafo">Impulsamos la cultura de los seguros y la modernización de la industria.</p>
+                <button type="button"  class="bannerDirectorio--boton">Ir al directorio</button>
+            </div>      
+        </section>
+        
+        
+        <section class="categorias">
+            <h1 class="categorias--titulo">Categorías</h1>
+            <ul class="categorias--grid">
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>
+                <li><a class="categorias--gridElemento" href="#">Agencia de seguros</a></li>      
+            </ul>
+        </section>
+        
+        <section class="paquetes"> 
+           <div class="paquetes--contenedor">
+                <div class="paquetes--info">
+                    <h1 class="paquetes--infoTitulo">Paquetes</h1>
+                    <p class="paquetes--infoParrafo">
                         Los usuarios del portal, clientes, proveedores del sector y público en general podrán encontrar datos de los principales ejecutivos de las compañías de seguros, 
                         las sociedades corredoras de seguros y reaseguros, agencias de seguros, oficinas de representación de reaseguradores en el exterior, proveedores del sector, consultores y asociaciones nacionales de seguros, entre otros
                         <br><br>
                         Es uno de los servicios más consultados en la web de Fasecolda y es una manera de posicionar su marca y hacerla mas visible dentro de la industria.
                     </p>
-                    <button class="btn-ver-paquetes">Ver paquetes</button>
+                    <button class="paquetes--infoBoton">Ver paquetes</button>
                 </div>
 
-                <div class="image-paquetes">
+                <div class="paquetes--imagen">
                     <img src="/assets/img/image-paquetes.png" alt="">
                 </div>
-           </div> 
-            
-            
-        </div>
-        <div class="section-aliados">
-            <h1>Algunos de nuestros aliados</h1>
-            <div class="carousel-aliados">
-                <img src="/assets/img/Logo-Allianz.png" alt="">
-                <img src="/assets/img/Logo-Liberty.png" alt="">
-                <img src="/assets/img/Logo-Berkley.png" alt="">
-                <img src="/assets/img/Logo-BBVA.png" alt="">
-                <img src="/assets/img/Logo-Equidad.png" alt="">
-                <img src="/assets/img/Logo-AXA-Colpatria.png" alt="">
+           
+            </div>         
+        </section>
+
+
+        <div class="aliados">
+            <h1 class="aliados--titulo">Algunos de nuestros aliados</h1>
+            <div class="aliados--carousel">
+                <img class="aliados--imagen" src="/assets/img/Logo-Allianz.png" alt="">
+                <img class="aliados--imagen" src="/assets/img/Logo-Liberty.png" alt="">
+                <img class="aliados--imagen" src="/assets/img/Logo-Berkley.png" alt="">
+                <img class="aliados--imagen" src="/assets/img/Logo-BBVA.png" alt="">
+                <img class="aliados--imagen" src="/assets/img/Logo-Equidad.png" alt="">
+                <img class="aliados--imagen" src="/assets/img/Logo-AXA-Colpatria.png" alt="">
             </div>
-            
-            <button class="btn-pauta-aqui">Pauta aquí</button>
-            
-            
+
+            <button class="aliados--botonPauta">Pauta aquí</button>
+
         </div>
+    
     </section>
 
-    <footer class="footer-fasecolda">    
-    </footer>
-    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/carousel.js"></script>
 </body>
 </html>
+
+
