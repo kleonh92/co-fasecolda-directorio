@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/vendor/splide/dist/css/splide.min.css">
     <title>Home Directorio - Fasecolda</title>
 </head>
 <body>
@@ -76,13 +77,17 @@
 
         <div class="aliados">
             <h1 class="aliados__titulo">Algunos de nuestros aliados</h1>
-            <div class="aliados__carousel">
-                <img class="aliados__imagen" src="/assets/img/Logo-Allianz.png" alt="">
-                <img class="aliados__imagen" src="/assets/img/Logo-Liberty.png" alt="">
-                <img class="aliados__imagen" src="/assets/img/Logo-Berkley.png" alt="">
-                <img class="aliados__imagen" src="/assets/img/Logo-BBVA.png" alt="">
-                <img class="aliados__imagen" src="/assets/img/Logo-Equidad.png" alt="">
-                <img class="aliados__imagen" src="/assets/img/Logo-AXA-Colpatria.png" alt="">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/Logo-Allianz.png" alt=""></li>
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/Logo-Berkley.png" alt=""></li>
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/Logo-BBVA.png" alt=""></li>
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/Logo-Equidad.png" alt=""></li>
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/Logo-AXA-Colpatria.png" alt=""></li>
+                    </ul>
+                </div>
+               
             </div>
 
             <button class="aliados__botonPauta">Pauta aquí</button>
@@ -91,9 +96,7 @@
     
     </section>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/vendor/splide/dist/js/splide.min.js"></script>
     <script type="text/javascript" src="./assets/js/carousel.js"></script>
 </body>
 </html>
