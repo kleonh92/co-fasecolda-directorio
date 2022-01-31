@@ -47,14 +47,14 @@
     background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);   
 }
 
-.headerFasecolda--list{
+.headerFasecolda__list{
     display: flex;
     gap: 1rem;
     place-content: center;
     list-style: none;
 }
 
-.headerFasecolda--listElement{
+.headerFasecolda__listElement{
     text-decoration: none;
     color: var(--color-white);
 }
@@ -66,7 +66,7 @@
     align-items: center;
 }
 
-.bannerDirectorio--imagen{
+.bannerDirectorio__imagen{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -74,13 +74,13 @@
     object-position: center;
 }
 
-.bannerDirectorio--info{
+.bannerDirectorio__info{
     position: relative;
     margin-left: 14%;
     padding-bottom: 1rem;
 }
 
-.bannerDirectorio--titulo {
+.bannerDirectorio__titulo {
     font-family: Asap;
     font-size: 48px;
     font-weight: 600;
@@ -89,7 +89,7 @@
     color: var(--color-white);
 }
 
-.bannerDirectorio--parrafo{
+.bannerDirectorio__parrafo{
     font-family: Asap;
     font-size: 16px;
     font-style: normal;
@@ -100,7 +100,7 @@
     padding: 1rem 0;
 }
 
-.bannerDirectorio--boton {
+.bannerDirectorio__boton {
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -130,7 +130,7 @@
 }
 
 
-.categorias--titulo, .aliados--titulo{
+.categorias__titulo, .aliados__titulo{
     font-family: Asap;
     font-size: 48px;
     font-style: normal;
@@ -144,7 +144,7 @@
 }
 
 
-.categorias--grid{
+.categorias__grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 0.5rem;
@@ -152,7 +152,7 @@
     justify-items: center;
 }
 
-.categorias--gridElemento{
+.categorias__gridElemento{
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -162,20 +162,24 @@
 }
 
 .paquetes{
+    height: 45%; 
+}
+
+.paquetes{
     background-color: #E5F4FE;
 }
 
-.paquetes--info {
+.paquetes__info {
     margin-left: 8rem;
 }
 
-.paquetes--contenedor{
+.paquetes__contenedor{
     display: flex;
     width: 80%;
     padding: 2rem;
 }
 
-.paquetes--infoTitulo{
+.paquetes__infoTitulo{
     font-family: Asap;
     font-size: 48px;
     font-style: normal;
@@ -186,7 +190,7 @@
     color: var(--color-neutral);
 }
 
-.paquetes--infoParrafo{
+.paquetes__infoParrafo{
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -200,7 +204,7 @@
 
 }
 
-.paquetes--infoBoton{
+.paquetes__infoBoton{
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -223,7 +227,7 @@
     margin: 4rem 0; 
 }
 
-.aliados--carousel{
+.aliados__carousel{
     display: flex;
     gap: 5rem;
     place-content: center;
@@ -232,11 +236,11 @@
     overflow-x: hidden;
 }
 
-.aliados--imagen{
+.aliados__imagen{
     max-width: 100%;
 }
 
-.aliados--botonPauta {
+.aliados__botonPauta {
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -259,17 +263,17 @@
 /*Se usa el enfoque desktop first debido a la ausencia de diseños en mobile*/
 
 @media (max-width: 1024px) {
-    .categorias--grid {
+    .categorias__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .paquetes--contenedor{
+    .paquetes__contenedor{
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
 
-    .paquetes--infoTitulo{
+    .paquetes__infoTitulo{
         text-align: center;
     }
 
@@ -277,23 +281,119 @@
 
 /*Fin de estilos del home del directorio*/
 
+
+
 /*Inicio de estilos de la página de Paquetes*/
+
+.block-paquetes{
+    position: relative;
+}
+
+.title-banner{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 30%;
+    color:#FFFFFF;
+
+}
+
+.contenido-descripcion{
+    width: 50%;
+    margin-left: 10rem;
+}
+
+.titulo-paquetes{
+    color: #58C3F0;
+}
+
+.parrafo-paquetes, .lista-beneficios {
+    width: 70%;
+}
+
+.lista-beneficios{
+    padding-left: 1rem;
+}
+
+.lista-beneficios{
+    list-style-image: url(/assets/img/check-vineta.svg) ;
+}
+
+.card-paquetes {
+    position: absolute;
+    top: 12%;
+    right: 7rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 16px 0px #00000014;
+    width: 35rem;
+    height: 45rem;
+    border-radius: 8px;
+}
+
+.encabezado-paquete {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.grid-paquetes{
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.card{ 
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+}
+
+.id-paquete{
+    width: 4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.plan-cantidad{
+    width: 80%;
+    text-align: center;
+    color: #FFFFFF;   
+}
+
+.plan-precio{
+    width: 40%;
+    color: #FFFFFF;
+}
+
+.metodos-pago{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 12rem;
+    margin: 0 auto;
+}
+
+.tarjeta-credito, .transferencia-bancaria {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ECEFF3;
+}
+
+.label-paquete{
+    background-color: var(--color-primary);
+    border-radius: 8px;
+}
+
+.radio{ 
+    width: 24px;
+}
+
 
 /*Fin de estilos de la página de paquetes*/
 
-
-
-
-
-
-.article-paquetes > p {
-    width: 80%;
-    margin-top: 2rem;
-}
-
-.article-paquetes > button{
-    margin-top: 2rem;
-}
 
 
 
@@ -315,56 +415,6 @@
     background-color: var(--color-white);
 }
 
-.header-paquetes{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 72px;
-    z-index: 9;
-    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%); 
-}
-
-
-.footer-fasecolda{
-    width: 100%;
-    height: 12rem;
-    background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);   
-}
-
-
-.section-paquetes h1{
-    font-size: 48px;
-    line-height: 56px;
-    font-weight: 600;
-    color: rgba(73, 75, 77, 1); 
-}
-
-.section-paquetes p {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400; 
-}
-
-
-
-
-.btn-ver-paquetes{
-    width: 8rem;
-    padding: 0.5rem;
-    color: #FFFFFF;
-    background: var(--color-primary);
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-}
-
-
-
-
-
-/*Fin de estilos de la nueva pantalla previa al directorio*/
 
 .header-elements-paquetes{
     display: flex;
@@ -374,23 +424,6 @@
 .header-paquetes #logo{
     margin-top: 0;
     margin-left: 0;
-}
-
-.contenido-descripcion{
-    width: 50%;
-    margin-left: 10rem;
-}
-
-.parrafo-paquetes, .lista-beneficios {
-    width: 70%;
-}
-
-.lista-beneficios{
-    padding-left: 1rem;
-}
-
-.lista-beneficios{
-    list-style-image: url(/assets/img/check-vineta.svg) ;
 }
 
 .header-elements a, .header-elements-paquetes a{
@@ -700,17 +733,6 @@
     height: 100vh;
 }
 
-.card-paquetes {
-    position: absolute;
-    top: 12%;
-    right: 7rem;
-    background-color: #FFFFFF;
-    box-shadow: 0px 8px 16px 0px #00000014;
-    width: 35rem;
-    height: 45rem;
-    border-radius: 8px;
-}
-
 .footer-paquetes{
     position: absolute;
     display: flex;
@@ -731,93 +753,10 @@
     margin-right: 3rem;
 }
 
-.block-paquetes{
-    position: relative;
-}
-
-.encabezado-paquete {
-    width: 90%;
-    margin: 2rem auto;
-}
-
-.paquetes{
-    height: 45%; 
-}
-
-.grid-paquetes{
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    gap: 0.5rem;
-}
-
-.card{ 
-    display: flex;
-    align-items: center;
-    height: 3.5rem;
-    border-radius: 8px;
-    background-color: var(--color-primary);
-}
-
-
-.id-paquete{
-    width: 4rem;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.plan-cantidad{
-    width: 80%;
-    text-align: center;
-    color: #FFFFFF;   
-}
-
-.plan-precio{
-    width: 40%;
-    color: #FFFFFF;
-}
-
-.metodos-pago{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: 12rem;
-    margin: 0 auto;
-}
-
-.tarjeta-credito, .transferencia-bancaria {
-    display: grid;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #ECEFF3;
-}
-
-.titulo-paquetes{
-    color: #58C3F0;
-}
-
-.title-banner{
-    position: absolute;
-    top: 25%;
-    left: 8%;
-    width: 30%;
-    color:#FFFFFF;
-
-}
-
-.label-paquete{
-    background-color: var(--color-primary);
-    border-radius: 8px;
-}
-
-.radio{ 
-    width: 24px;
-}
-
 /* .radio:checked + .plan-cantidad{
     border: 1px solid red;
 } */
 
-.card > .radio:checked{
+/* .card > .radio:checked{
     border: 1px solid red;
-}
+} */
