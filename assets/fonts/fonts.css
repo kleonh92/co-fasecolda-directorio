@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-Regular.woff2') format('woff2'),
+        url('Asap-Regular.woff') format('woff'),
+        url('Asap-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-Bold.woff2') format('woff2'),
+        url('Asap-Bold.woff') format('woff'),
+        url('Asap-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-SemiBold.woff2') format('woff2'),
+        url('Asap-SemiBold.woff') format('woff'),
+        url('Asap-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-MediumItalic.woff2') format('woff2'),
+        url('Asap-MediumItalic.woff') format('woff'),
+        url('Asap-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-SemiBoldItalic.woff2') format('woff2'),
+        url('Asap-SemiBoldItalic.woff') format('woff'),
+        url('Asap-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-BoldItalic.woff2') format('woff2'),
+        url('Asap-BoldItalic.woff') format('woff'),
+        url('Asap-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-Medium.woff2') format('woff2'),
+        url('Asap-Medium.woff') format('woff'),
+        url('Asap-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url('Asap-Italic.woff2') format('woff2'),
+        url('Asap-Italic.woff') format('woff'),
+        url('Asap-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff'),
+        url('Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-LightItalic.woff2') format('woff2'),
+        url('Roboto-LightItalic.woff') format('woff'),
+        url('Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.woff2') format('woff2'),
+        url('Roboto-Light.woff') format('woff'),
+        url('Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BoldItalic.woff2') format('woff2'),
+        url('Roboto-BoldItalic.woff') format('woff'),
+        url('Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff'),
+        url('Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-BlackItalic.woff2') format('woff2'),
+        url('Roboto-BlackItalic.woff') format('woff'),
+        url('Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Italic.woff2') format('woff2'),
+        url('Roboto-Italic.woff') format('woff'),
+        url('Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-MediumItalic.woff2') format('woff2'),
+        url('Roboto-MediumItalic.woff') format('woff'),
+        url('Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Thin.woff2') format('woff2'),
+        url('Roboto-Thin.woff') format('woff'),
+        url('Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.woff2') format('woff2'),
+        url('Roboto-Medium.woff') format('woff'),
+        url('Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic.woff2') format('woff2'),
+        url('Roboto-ThinItalic.woff') format('woff'),
+        url('Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#title-category{
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.006em;
+    line-height: 22px;
+
+}
+
+#category-list a{
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.element-legales{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 17px;
+}
+
+#header-elements a , .header-elements-paquetes a{
+    font-family: 'Asap';
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 20px;
+}
+ .titulo-section{
+     font-family: 'Asap';
+     font-size: 32px;
+     font-weight: 600;
+     line-height: 40px;
+ }
+
+ .parrafo-section, .descripcion-agencia, .ubication-description, .nit-primario-description, .nit-secundario-description{
+     font-family: 'Roboto';
+     font-size: 14px;
+     font-weight: 400;
+     font-style: normal;
+     line-height: 20px;
+ }
+
+ #btn-ingresar{
+     font-family: 'Roboto';
+     font-size: 14px;
+     font-weight: 700;
+     font-style: normal;
+     line-height: 20px;
+ }
+
+ /*Fuentes de la sección de agencia*/
+
+ .titulo-agencia, .titulo-ejecutivo, .titulo-info-seccion, .titulos-paquetes{
+     font-family: 'Asap';
+     font-size: 20px;
+     font-weight: 600;
+     font-style: normal; 
+ }
+
+ .ramos-autorizados-agencia{
+     font-family: 'Asap';
+     font-size: 16px;
+     font-weight: 600;
+     font-style: normal;
+ }
+
+ .cargo-ejecutivo, .email-ejecutivo, .telefono-ejecutivo, .dias-atencion, .horarios-atencion, .lineas-detalle, .parrafo-paquetes, .lista-beneficios{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nombre-ejecutivo {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title-cabecera {
+    font-family: 'Asap';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.title-banner{
+    font-family: 'Asap';
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+.legales-footer a , .derechos a{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 17px;
+}
+
+.id-paquete, .plan-cantidad, .plan-precio{
+    font-family: 'Asap';
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.partial-title{
+    font-family: 'Asap';
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: normal;  
+}
+

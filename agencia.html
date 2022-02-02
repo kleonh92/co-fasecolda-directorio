@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/vendor/splide/dist/css/splide.min.css">
+    <title> Agencia | Fasecolda</title>
+</head>
+<body>
+    <div class="contenedorDirectorio">
+        <!--Este es el aside lateral del home-->    
+        <aside class="lateralDirectorio">
+
+            <h3 class="lateralDirectorio__titulo">Categorias</h3>
+
+            <div class="lateralDirectorio__categorias" id="categories">
+                <div class="nav flex-column gap-4 nav-pills lateralDirectorio__listadoCategorias" id="v-pills-tab" role="tablist" aria-orientation="vertical">  
+                    
+                    <a  class="nav-link active lateralDirectorio__categoria" 
+                        id="v-pills-agencia-seguros-tab"
+                        data-bs-toggle="pill" href="#v-pills-agencia-seguros"
+                        role="tab" aria-controls="v-pills-agencia-seguros" 
+                        aria-selected="false">Agencias de seguros</a>
+                    
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-ajustadores-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-ajustadores-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-ajustadores-seguros" 
+                        aria-selected="false">Ajustadores de seguros</a>
+
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-asesores-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-asesores-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-asesores-seguros" 
+                        aria-selected="false">Asesores de seguros</a>
+
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-asociaciones-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-asociaciones-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-asociaciones-seguros" 
+                        aria-selected="false">Asociaciones de seguros</a>
+
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-compania-reaseguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-compania-reaseguros" 
+                        role="tab" 
+                        aria-controls="v-pills-compania-reaseguros" 
+                        aria-selected="false">Compañías de reaseguros del exterior</a>
+
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-compania-seguros-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-compania-seguros" 
+                        role="tab" 
+                        aria-controls="v-pills-compania-seguros" 
+                        aria-selected="false">Compañías de seguros</a>
+                    
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-consultores-sector-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-consultores-sector" 
+                        role="tab" 
+                        aria-controls="v-pills-consultores-sector" 
+                        aria-selected="false">Consultores del sector</a>
+                    
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-entidades-no-aseguradoras-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-entidades-no-aseguradoras" 
+                        role="tab" 
+                        aria-controls="v-pills-entidades-no-aseguradoras" 
+                        aria-selected="false">Entidades no aseguradoras</a>
+                    
+                    <a  class="nav-link lateralDirectorio__categoria"
+                        id="v-pills-proveedores-sector-tab"
+                        data-bs-toggle="pill" 
+                        href="#v-pills-proveedores-sector" 
+                        role="tab" 
+                        aria-controls="v-pills-proveedores-sector" 
+                        aria-selected="false">Proveedores del sector</a>
+                
+                </div>
+            </div>
+
+            <!-- <div id="legales-aside">
+                <a class="element-legales">Política de privacidad</a>
+                <a class="element-legales">Términos y condiciones</a>
+                <a class="element-legales">© Derechos Reservados 2021</a>
+            </div> -->
+
+        </aside>
+
+         <!-- Este es el contenedor del detalle de una agencia -->    
+    <section class="contenedorAgencia">
+        <div class="contenedorAgencia__banner">
+            <div class="splide-agencia">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/BannerExample.png" alt=""></li>
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/BannerExample-copy.png" alt=""></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <div class="contenedor__temporal">
+            <div class="agencia">
+                 <img class="agencia__logo" src="assets/img/Logo-Allianz.svg" alt="">
+                 <h2 class="agencia__nombre">Allianz Colombia</h2>
+                 <h3 class="agencia__titulo">Nosotros</h3>
+                 <p class="agencia__subtitulo">RAMOS AUTORIZADOS</p>
+                 <p class="agencia__descripcion">VIDA: Accidentes Personales, Vida Grupo, y Vida Individual, Salud, Pensiones Voluntarias. <br><br>
+                     GENERALES: Agropecuario, Corriente Débil, Incendio, Lucro Cesante, Manejo, Montaje y Rotura de Maquinaria, Navegación y Casco, Responsabilidad Civil, Sustracción, Terremoto, Transporte, Hogar, Todo Riesgo Contratista.
+                 </p>
+        
+                 <h3 class="agencia__tituloEjecutivos">Ejecutivos</h3>
+                 <div class="agencia__gridEjecutivos">
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     <div class="agencia__cardEjecutivo">
+                         <div class="agencia__infoEjecutivo">
+                             <p class="agencia__cargoEjecutivo">CEO</p>
+                             <p class="agencia__nombreEjecutivo">DAVID COLMENARES SPENCE</p>
+                             <p class="agencia__emailEjecutivo">Email: <b class="correo-ejecutivo">david.colmenares@allianz.co</b></p>
+                             <p class="agencia__telefonoEjecutivo">Teléfono: 5188787 Ext:9010</p>
+                         </div>       
+                     </div>
+                     
+                 </div>
+            </div>
+        
+            <div class="infoAgencia">
+                <div class="infoAgencia__cabecera">
+                    <div class="infoAgencia__contenedorCabecera">
+                        <div class="infoAgencia__nombreCabecera">
+                            <img class="infoAgencia__logoNombre" src="/assets/img/world.png" alt="">
+                            <p class="infoAgencia__nombre">allianz.co</p>
+                        </div>
+                        <div class="InfoAgencia__redesSociales">
+                            <a class="infoAgencia__redSocial" href="#"><img src="/assets/img/facebook.svg" alt="facebook-logo"></a>
+                            <a class="infoAgencia__redSocial" href="#"><img src="/assets/img/twitter.svg" alt="twitter-logo"></a>
+                            <a class="infoAgencia__redSocial" href="#"><img src="/assets/img/linkedin.svg" alt="linkedin-logo"></a>
+                            <a class="infoAgencia__redSocial" href="#"><img src="/assets/img/instagram.svg" alt="instagram-logo"></a>
+                            <a class="infoAgencia__redSocial" href="#"><img src="/assets/img/youtube.svg" alt="youtube-logo"></a>
+                        </div>
+                    </div>     
+                </div>
+        
+                <div class="infoAgencia__cuerpo">
+                   <div class="infoAgencia__contenedorDireccion">
+                        <div class="infoAgencia__cuerpoDireccion">
+                            <img src="assets/img/ubication.svg" alt="ubication">
+                            <p class="infoAgencia__descripcionDireccion"> Carrera 13A N° 29-24
+                                Torre Empresarial Allianz
+                                Correspondencia: Local 102
+                                Bogotá, D.C., Colombia</p>
+                        </div>
+
+                        <div class="infoAgencia__cuerpoWhatsapp">
+                            <img src="assets/img/whatsapp.svg" alt="whatsapp">
+                            <p class="infoAgencia__numeroWhatsapp">31530000000</p>
+                        </div>
+                   </div>  
+                    
+                         
+                     
+                <div class="infoAgencia__nit">
+                    <img src="assets/img/code-bar-nit.svg" alt="nit">
+                    <div class="infoAgencia__nitPrimario">
+                        <p class="infoAgencia__nitPrimarioDescripcion">
+                                 ALLIANZ SEGUROS S.A.<br>
+                                 <b>Nit: 860.026.182-5</b>
+                        </p>
+                    </div>
+                         
+                    <div class="nit-secundario">
+                        <p class="nit-secundario-description">
+                                 ALLIANZ SEGUROS DE VIDA S.A
+                                 Nit: 860.027.404-1
+                        </p>
+                    </div>
+                     
+                     </div>
+        
+                     <div class="horario-atención-agencia">
+                         <div class="cabecera-horario">
+                             <img src="assets/img/calendar-info.svg" alt="">
+                             <h3 class="titulo-info-seccion">Horario de atención</h3>
+                         </div>
+                         
+                         <div class="info-atencion">
+                             
+                             <div class="dias-atencion">
+                                 Lunes a viernes:<br> 
+                                 Sábados:<br>
+                                 Domingos y Festivos:
+                             </div>
+        
+                             <div class="horarios-atencion">
+                                 08:00 AM - 5:00 PM<br>
+                                 08:00 AM - 1:00 PM<br>
+                                 Cerrado
+                             </div>    
+                         </div>
+                             
+                     </div>
+        
+                     <div class="lineas-atencion">
+                         <div class="cabecera-lineas-atencion">
+                             <img src="assets/img/telefono-icon.svg" alt="">
+                             <h3 class="titulo-info-seccion">Línea de atención al cliente</h3>
+                         </div>
+        
+                         <div class="lineas-atencion-info">
+                             <p class="lineas-detalle">
+                                 Celular: #265 <br>
+                                 Bogotá:+571 594133 <br>
+                                 Nacional: 018000 513500 <br><br>
+        
+                                 <b>Vida individual Actual:</b> <br>
+                                 Bogotá: +571 48448855 / Nacional: 018000 412111 <br><br>
+        
+                                 <b>Affinity:</b> <br>
+                                 Bogotá: +571 5941130 / Nacional: 0188000 514400 <br><br>
+        
+                                 <b>Ahorro e Inversión:</b> <br>
+                                 Bogotá: +571 5941130 / Nacional: 018000 5144400 <br><br>
+        
+                                 <b>Consumidores financieros en situación de discapacidad (CFSD) auditiva:</b><br>  
+                                 Línea Gratuita Nacional: 018000 415232<br><br>
+        
+                                 <b>Pagos y cartera:</b>><br> 
+                                 Bogotá: +571 6065900 / Nacional: 018000 517270<br><br>
+        
+                                 <b>Autorizaciones para Instituciones Médicas:</b><br>
+                                 Bogotá: +571 5941122 / Nacional : 018000 510989
+                             </p>
+                         
+                         </div>
+        
+                     </div>
+        
+                </div>
+        
+        
+            </div>
+        </div>    
+            
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/vendor/splide/dist/js/splide.min.js"></script>
+    <script src="/assets/js/carousel.js"></script>
+</body>
+</html>
