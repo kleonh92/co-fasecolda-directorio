@@ -37,7 +37,7 @@ var splide = new Splide( '.splide', {
   splide.mount();
 
 
-  var splide2 = new Splide( '.splide2', {
+  var splide2 = new Splide( '.splide-agencia', {
     type   : 'loop',
     perPage: 4,
     arrows: false,

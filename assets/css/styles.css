@@ -111,16 +111,17 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.006em;
-    text-align: left;
     color: var(--color-primary);
     width: 135px;
-    height: 44px;
     text-align: center;
     border-radius: 8px;
+    padding: 1rem;
+    text-decoration: none;
     border: none;
     background-color: var(--color-white);
     box-shadow: 0px 2px 4px 0px #00000014;
     cursor: pointer;
+    display: block;
 }
 
 .categorias{
@@ -216,15 +217,16 @@
     line-height: 20px;
     letter-spacing: -0.006em;
     text-align: center;
-    height: 44px;
+    display: block;
     width: 131px;
-    left: 221px;
-    top: 1262px;
+    padding: 0.75rem 0;
     border: 0;
     border-radius: 8px;
     background-color: var(--color-primary);
     color: var(--color-white);
-    box-shadow: 0px 2px 4px 0px #00000014;   
+    box-shadow: 0px 2px 4px 0px #00000014;
+    cursor: pointer;
+    text-decoration: none;   
 }
 
 .aliados{
@@ -255,17 +257,18 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.006em;
-    text-align: left;
-    height: 44px;
-    width: 115px;
-    border-radius: 8px;
-    border: none;
-    padding: 12px 24px;
-    color: var(--color-white);
-    background: var(--color-primary);
-    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 8%);
+    text-align: center;
     display: block;
-    margin: 2rem auto;
+    width: 131px;
+    padding: 0.75rem 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0px 2px 4px 0px #00000014;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 1rem auto;   
 }
 
 /*Se usa el enfoque desktop first debido a la ausencia de diseños en mobile*/
@@ -465,6 +468,7 @@
 
 .agencia { 
     width: 60%;
+    margin-top: 1rem;
 }
 
 .agencia__logo{
@@ -814,6 +818,18 @@
     }
     .agencia{
         width: 50%;
+    }
+}
+
+@media (max-width:768px){
+    .agencia{
+        width: 90%;
+    }
+    .infoAgencia{
+        position: relative;
+        width: 90%;
+        left: 0;
+        margin-top: 2rem;
     }
 }
 
