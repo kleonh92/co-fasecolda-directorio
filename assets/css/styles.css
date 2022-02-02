@@ -1042,6 +1042,17 @@
     width: 24px;
 }
 
+.pagoTransferencia__info{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: center;
+    color: var(--color-primary);
+}
+
 
 @media (max-width: 1440px){
     .contenedorPaquetes__tituloBanner{
