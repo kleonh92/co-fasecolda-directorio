@@ -4,9 +4,12 @@
 :root{
     --color-white: #FFFFFF;
     --color-primary: #478DCB;
+    --color-secondary: #58C3F0; 
     --color-neutral: #494B4D;
     --color-neutral-100: #2C2D2E; 
     --color-neutral-80: #6D7074;
+    --color-neutral-60: #DAE0E8;
+
 }
 
 /* Fin de definicion de variables*/
@@ -447,85 +450,264 @@
 .contenedorAgencia{
     display: flex;
     padding: 2rem;
-    background-color: #E5E5E5;
+    background-color: var(--color-white);
 }
 
-.info-agencia { 
+.agencia { 
     width: 60%;
 }
 
-.card-info-agencia{
-    width: 40%;
-    background-color: #FFFFFF;
-    border-radius: 8px 0 0 8px;
-
+.agencia__logo{
+    width: 320px;
 }
 
-.grid-ejecutivos { 
+.agencia__nombre{
+    font-family: Asap;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.021em;
+    text-align: left;
+    color: var(--color-primary);
+}
+
+.agencia__titulo{
+    font-family: Asap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    text-align: left;
+    color: var(--color-secondary);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.agencia__subtitulo{
+    font-family: Asap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: var(--color-neutral-80);
+}
+
+.agencia__descripcion{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: var(--color-neutral-100); 
+    width: 80%;
+}
+
+.agencia__tituloEjecutivos{
+    font-family: Asap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    text-align: left;
+    color: var(--color-secondary);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.agencia__gridEjecutivos { 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     height: 25rem;
     overflow-y: scroll;
     margin-right: 0.5rem;
 }
 
-.grid-ejecutivos::-webkit-scrollbar{
+.agencia__gridEjecutivos::-webkit-scrollbar{
+    
+}
+
+.agencia__gridEjecutivos::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.agencia__gridEjecutivos:-webkit-scrollbar:vertical {
+    width:4px;
+}
+.agencia__gridEjecutivos::-webkit-scrollbar-button:increment,.agencia__gridEjecutivos::-webkit-scrollbar-button {
     display: none;
 }
-
-.cabecera{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #ECEFF3;
+.agencia__gridEjecutivos:-webkit-scrollbar:horizontal {
+    height: 4px;
+}
+.agencia__gridEjecutivos::-webkit-scrollbar-thumb {
+    background-color: var(--color-neutral-60);
+    border-radius: 20px;
+    border: 1px solid #F1F2F3;
+}
+.agencia__gridEjecutivos::-webkit-scrollbar-track {
+    border-radius: 10px;
 }
 
-.agencia-cabecera{
+.agencia__cardEjecutivo{
+    display: flex;
+}
+
+.agencia__cardEjecutivo::before{
+    content: url(/assets/img/ejecutivos-icon-list.svg);
+    margin-right: 0.3rem;
+}
+
+.agencia__infoEjecutivo{
+    width: 95%;
+}
+
+.agencia__cargoEjecutivo,
+.agencia__emailEjecutivo,
+.agencia__telefonoEjecutivo{    
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    margin-bottom: 0;   
+}
+
+.agencia__nombreEjecutivo{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.infoAgencia{
+    width: 40%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #B6BBC1
+}
+
+
+
+.infoAgencia__cabecera{
+    background-color: var(--color-neutral-60);
+    border-bottom: 1px solid #ECEFF3;
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
+}
+
+.infoAgencia__contenedorCabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+   
+}
+
+.infoAgencia__nombreCabecera{
    display: flex;
    margin-left: 1rem;
 }
 
-.agencia-cabecera img {
+.infoAgencia__logoNombre{
     width: 24px;
     height: 24px;
     margin-right: 1rem;
 }
 
-.redes-sociales {
+.infoAgencia__nombre{
+    font-family: Asap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: var(--color-neutral-100);
+}
+
+
+.infoAgencia__redesSociales {
     margin-right: 1rem;
 }
 
-.redes-sociales a {
+.infoAgencia__redSocial{
     margin-right: 0.5rem;
 }
 
-.agencia-cuerpo{ 
-    margin-left: 1rem;
-    margin-right: 1rem;
+.infoAgencia__cuerpo{ 
+    margin: 1rem;
 }
 
-.direccion-agencia{
+.infoAgencia__cuerpoDireccion{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.ubication-description{
-    width: 40%;
+.infoAgencia__cuerpoWhatsapp{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.infoAgencia__numeroWhatsapp{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+}
+
+.infoAgencia__descripcionDireccion{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+}
+
+.infoAgencia__contenedorDireccion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .direccion-agencia img {
     margin-right: 0.5rem;
 }
 
-.info-nit{
+.infoAgencia__nit{
     display: flex;
     align-items: flex-start;
     gap: 1rem;
 }
+
+.infoAgencia__nitPrimarioDescripcion{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+}
+
 
 .info-nit img {
     margin-top: 0.2rem;
@@ -535,7 +717,7 @@
     margin-top: 1rem;
 }
 
-.nit-primario, .nit-secundario{
+.infoAgencia__nitPrimario, .nit-secundario{
     width: 40%;
 }
 
@@ -554,42 +736,6 @@
     width: 40%;
 }
 
-.card-ejecutivo {
-    display: flex;
-}
-
-.card-ejecutivo::before{
-    content: url(/assets/img/ejecutivos-icon-list.svg);
-    margin-right: 0.3rem;
-}
-
-.info-ejecutivo{
-    width: 95%;
-}
-
-.logo-agencia {
-    width: 320px;
-}
-
-.titulo-agencia, .titulo-ejecutivo{
-    color: #58C3F0;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.ramos-autorizados-agencia{
-    color: #6D7074;
-}
-
-.descripcion-agencia{
-    width: 80%;
-}
-
-
-
-.cargo-ejecutivo, .nombre-ejecutivo, .email-ejecutivo, .telefono-ejecutivo{
-    margin-bottom: 0;
-}
 
 .correo-ejecutivo{
     color: #58C3F0;
@@ -597,17 +743,20 @@
 
 /*Estilos de card info agencia lateral*/
 
-.title-cabecera{
-    color: #367AA9;
-}
-
-.nit-primario-description, .nit-secundario-description, 
+.infoAgencia__nitPrimarioDescripcion, .nit-secundario-description, 
 .lineas-detalle {
     width: 80%;
 }
 
 .titulo-info-seccion{
-    color: #58C3F0;
+    font-family: Asap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    text-align: left;    
+    color: var(--color-primary);
 }
 
 .lineas-detalle{
@@ -646,11 +795,21 @@
     margin-right: 3rem;
 }
 
-/* .radio:checked + .plan-cantidad{
-    border: 1px solid red;
-} */
+@media (max-width: 1024px) {
+    .agencia__gridEjecutivos{
+        grid-template-columns: 1fr;
+    }
+    .agencia{
+        width: 50%;
+    }
+}
 
-/* .card > .radio:checked{
+/* cardPlan__radio:checked ~ .card{
+    background-color:#B6BBC1; 
+}
+
+
+.card > .radio:checked{
     border: 1px solid red;
 } */
 
@@ -662,64 +821,108 @@
 
 /*Inicio de estilos de la página de Paquetes*/
 
-.block-paquetes{
+.contenedorPaquetes{
     position: relative;
 }
 
-.title-banner{
+.contenedorPaquetes__tituloBanner{
     position: absolute;
+    font-family: Asap;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.021em;
+    text-align: left;
     top: 25%;
     left: 8%;
     width: 30%;
-    color:#FFFFFF;
+    color: var(--color-white);
 
 }
 
-.contenido-descripcion{
+.contenedorPaquetes__bannerImagen {
+    width: 100%;
+}
+
+.informacionPaquetes__contenido{
     width: 50%;
     margin-left: 10rem;
 }
 
-.titulo-paquetes{
-    color: #58C3F0;
+.informacionPaquetes__titulo{
+    font-family: Asap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    text-align: left;
+    color: var(--color-secondary);
 }
 
-.parrafo-paquetes, .lista-beneficios {
+.informacionPaquetes__parrafo{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: var(--color-neutral-100);
+}
+
+.informacionPaquetes__parrafo, .informacionPaquetes__beneficios {
     width: 70%;
 }
 
-.lista-beneficios{
+.informacionPaquetes__beneficios{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: left;
     padding-left: 1rem;
-}
-
-.lista-beneficios{
     list-style-image: url(/assets/img/check-vineta.svg) ;
 }
 
-.card-paquetes {
+.bg-color{
+    background-color: #B6BBC1 !important;
+}
+
+.cardPlanes {
     position: absolute;
     top: 12%;
     right: 7rem;
     background-color: #FFFFFF;
     box-shadow: 0px 8px 16px 0px #00000014;
-    width: 35rem;
-    height: 45rem;
+    width: 30rem;
+    height: 55rem;
     border-radius: 8px;
 }
 
-.encabezado-paquete {
-    width: 90%;
+.cardPlanes__encabezado {
+    font-family: Asap;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: center;
+    width: 85%;
     margin: 2rem auto;
 }
 
-.grid-paquetes{
+.cardPlanes__paquetesGrid{
     display: grid;
     width: 90%;
     margin: 0 auto;
     gap: 0.5rem;
 }
 
-.card{ 
+.cardPlan{ 
     display: flex;
     align-items: center;
     height: 3.5rem;
@@ -727,36 +930,107 @@
     background-color: var(--color-primary);
 }
 
-.id-paquete{
+.cardPlan__id{
+    font-family: Asap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.017em;
+    text-align: center;
     width: 4rem;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
-.plan-cantidad{
+.cardPlan__cantidad{
+    font-family: 'Asap';
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    font-style: normal;
     width: 80%;
     text-align: center;
-    color: #FFFFFF;   
+    color: var(--color-white);   
 }
 
-.plan-precio{
+.cardPlan__precio{
+    font-family: 'Asap';
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    font-style: normal;
     width: 40%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
-.metodos-pago{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: 12rem;
-    margin: 0 auto;
-}
-
-.tarjeta-credito, .transferencia-bancaria {
-    display: grid;
-    align-items: center;
+.pagoTarjetas{
+    font-family: Asap;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: -0.011em;
     text-align: center;
+    width: 90%;
+    margin: 0.75rem auto;
     border: 1px solid #ECEFF3;
+}
+
+.pagoTarjetas__parrafo, .pagoTransferencia__parrafo{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600; 
+}
+
+.pagoTarjetas__franquicias{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.pagoTarjetas__boton{
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 0.5rem auto;
+    width: 133px;
+    margin-bottom: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.pagoTransferencia{
+    font-family: Asap;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: -0.011em;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ECEFF3;
+    text-align: center;
+}
+
+.pagoTransferencia__subParrafo{
+    margin: 0.5rem;
+}
+
+.pagoTransferencia__contenedor{ 
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.pagoTransferencia__boton{ 
+    width: 133px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .label-paquete{
@@ -764,106 +1038,64 @@
     border-radius: 8px;
 }
 
-.radio{ 
+.cardPlan__radio{ 
     width: 24px;
 }
 
 
+@media (max-width: 1440px){
+    .contenedorPaquetes__tituloBanner{
+        left: 11%;
+    }
+}
+
+@media (max-width: 1366px){
+    .contenedorPaquetes__tituloBanner{
+        left: 11%;
+        top: 15%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cardPlanes{
+        position: relative;
+    }
+    
+    .contenedorPaquetes__tituloBanner{
+        top: 2%;
+    }
+
+    .informacionPaquetes__contenido{
+        margin: 0 auto;
+    }
+
+    .cardPlanes{
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedorPaquetes__tituloBanner{
+        width: 50%;
+        font-size: 25px;
+        top: 5%;
+        left: 23%;
+    }
+}
+
+@media (max-width: 425px){
+    .contenedorPaquetes__tituloBanner{
+        display: none;
+    }
+    .cardPlanes{
+      width: 90vw;
+    }
+
+    .informacionPaquetes__parrafo, .informacionPaquetes__beneficios{
+        width: 55vw;
+    }
+}
+
+
 /*Fin de estilos de la página de paquetes*/
-
-
-
-
-
-/*Estilos del sitio*/
-
-
-
-.header{
-    display: flex;
-    height: 4rem;
-    padding: 0.5rem;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-white);
-}
-
-
-.header-elements-paquetes{
-    display: flex;
-    align-items: center;
-}
-
-.header-paquetes #logo{
-    margin-top: 0;
-    margin-left: 0;
-}
-
-.header-elements a, .header-elements-paquetes a{
-    margin-right: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    color: #58C3F0;
-    letter-spacing: -0.006em;
-}
-
-.header-elements-paquetes a{
-    color: #FFFFFF;
-}
-
-
-.header-elements a:first-child, .header-elements-paquetes a:first-child{
-    margin-left: 2rem;
-}
-
-#btn-ingresar{
-    width: 5rem;
-    padding: 10px;
-    margin-right: 1rem;
-    background-color: #58C3F0;
-    color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-    border-style: none;
-}
-
-#logo {
-    margin-top: 1.5rem;
-    margin-left: 1rem;
-}
-
-.logo-aside-cabecera{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flecha-logo{
-    margin-top: 1.5rem;
-}
-
-#category-list{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-}
-
-.element-category, .element-legales{
-    display: block;
-    color: #FFFFFF;
-    margin-bottom: 1rem;
-    letter-spacing: -0.006em;
-    text-decoration: none;
-}
-
-.element-category, .element-legales:hover{
-    cursor: pointer;
-}
-
-
-#legales-aside{
-    margin-top: 3rem;
-    margin-left: 1rem;
-}
-
