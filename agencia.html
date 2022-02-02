@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/vendor/splide/dist/css/splide.min.css">
     <title> Agencia | Fasecolda</title>
 </head>
 <body>
@@ -102,7 +103,19 @@
         </aside>
 
          <!-- Este es el contenedor del detalle de una agencia -->    
-         <section class="contenedorAgencia">
+    <section class="contenedorAgencia">
+        <div class="contenedorAgencia__banner">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/BannerExample.png" alt=""></li>
+                        <li class="splide__slide"><img class="aliados__imagen" src="/assets/img/BannerExample-copy.png" alt=""></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <div class="contenedor__temporal">
             <div class="agencia">
                  <img class="agencia__logo" src="assets/img/Logo-Allianz.svg" alt="">
                  <h2 class="agencia__nombre">Allianz Colombia</h2>
@@ -305,9 +318,12 @@
         
         
             </div>
-         
-         </section>
+        </div>    
+            
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/vendor/splide/dist/js/splide.min.js"></script>
+    <script src="/assets/js/carousel.js"></script>
 </body>
 </html>
