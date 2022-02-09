@@ -9,6 +9,7 @@
     --color-neutral-100: #2C2D2E; 
     --color-neutral-80: #6D7074;
     --color-neutral-60: #DAE0E8;
+    --color-neutral-20: #F8F9FA;
 
 }
 
@@ -916,7 +917,11 @@
 }
 
 .bg-color{
-    background-color: #B6BBC1 !important;
+    background-color: var(--color-primary)!important;
+}
+
+.text-white{
+    color: var(--color-white) !important;
 }
 
 .cardPlanes {
@@ -950,11 +955,15 @@
 }
 
 .cardPlan{ 
-    display: flex;
+    /* display: flex;
     align-items: center;
-    height: 3.5rem;
+    height: 3.5rem; */
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr 0.5fr 1fr;
     border-radius: 8px;
-    background-color: var(--color-primary);
+    align-items: center;
+    background-color: var(--color-neutral-20);
+    height: 4rem;
 }
 
 .cardPlan__id{
@@ -966,8 +975,7 @@
     letter-spacing: -0.017em;
     text-align: center;
     width: 4rem;
-    text-align: center;
-    color: var(--color-white);
+    color: var(--color-secondary);
 }
 
 .cardPlan__cantidad{
@@ -978,7 +986,18 @@
     font-style: normal;
     width: 80%;
     text-align: center;
-    color: var(--color-white);   
+    color: var(--color-secondary);   
+}
+
+.cardPlan__ejecutivo{
+    font-family: Asap;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: var(--color-secondary);
 }
 
 .cardPlan__precio{
@@ -987,8 +1006,8 @@
     line-height: 40px;
     font-weight: 600;
     font-style: normal;
-    width: 40%;
-    color: var(--color-white);
+    /* width: 40%; */
+    color: var(--color-primary);
 }
 
 .pagoTarjetas{
