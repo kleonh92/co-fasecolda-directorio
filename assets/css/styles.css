@@ -296,9 +296,33 @@
 /*Inicio de estilos de la pag de directorio*/
 
 .lateralDirectorio {
+    position: relative;
+    left: 0;
     height: 100vh;
+    transition: all 300ms ease-in-out;
     padding: 1rem;
     background: linear-gradient(175.01deg, #1EA1AA 0%, #367AA9 100%);
+}
+
+.lateralDirectorio.active{
+    left: -100%;   
+}
+
+.toggle-btn{
+    position: absolute;
+    left: 115%;
+    top: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.toggle-btn span{
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid var(--color-neutral-80);
 }
 
 .lateralDirectorio__titulo{
@@ -334,8 +358,15 @@
 
 
 .contenedorCategoria{
+    position: relative;
+    left: 0;
+    transition: all 300ms ease-in-out;
     padding: 2rem;
     background-color: var(--color-white);
+}
+
+.contenedorCategoria.active{
+    left: -15%;   
 }
 
 .categoriaAseguradora{
